@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">amwhitta-CountBook</string>
+    <string name="title">CountBook</string>
 </resources>

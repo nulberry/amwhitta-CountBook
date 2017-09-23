@@ -6,4 +6,8 @@
     <string name="details_button">details</string>
     <string name="edit_button">edit</string>
     <string name="delete_button">delete</string>
+    <string name="edit_name_input">Edit name:</string>
+    <string name="edit_current_input">Edit current value:</string>
+    <string name="edit_initial_input">Edit initial value:</string>
+    <string name="edit_comment_input">Edit comment:</string>
 </resources>

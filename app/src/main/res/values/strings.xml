@@ -2,4 +2,8 @@
     <string name="app_name">amwhitta-CountBook</string>
     <string name="title">Your Counters:</string>
     <string name="number_of_counters">Number of Counters:</string>
+    <string name="reset_button">reset</string>
+    <string name="details_button">details</string>
+    <string name="edit_button">edit</string>
+    <string name="delete_button">delete</string>
 </resources>

@@ -10,4 +10,6 @@
     <string name="edit_current_input">Edit current value:</string>
     <string name="edit_initial_input">Edit initial value:</string>
     <string name="edit_comment_input">Edit comment:</string>
+    <string name="save_button">save</string>
+    <string name="new_button">new counter</string>
 </resources>

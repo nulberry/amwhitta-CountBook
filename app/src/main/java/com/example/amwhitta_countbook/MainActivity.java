@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        counterList = (ListView) findViewById(R.id.listView);
+        counterList = (ListView) findViewById(R.id.listViewCounters);
+        counterNumber = (EditText) findViewById(R.id.editTextNumCounters);
     }
 
 

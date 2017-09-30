@@ -28,7 +28,7 @@ public class CounterDetailsActivity extends AppCompatActivity {
         counterComment = (TextView) findViewById(R.id.textViewCommentDetail);
 
         counterName.setText("Name: " + counter.getName());
-        counterDate.setText("Date: " + counter.getDate());
+        counterDate.setText("Date modified: " + counter.getDate());
         counterCurrent.setText("Current value: " + Integer.toString(counter.getCurrent()));
         counterInitial.setText("Initial value: " + Integer.toString(counter.getInitial()));
         counterComment.setText("Comment: " + counter.getComment());

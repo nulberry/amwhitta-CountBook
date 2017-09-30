@@ -15,8 +15,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/edit_current_input"
+        android:hint="@string/edit_current_input"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editTextNewInitial"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -31,8 +31,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/edit_initial_input"
+        android:hint="@string/edit_initial_input"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editTextNewComment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -47,12 +47,12 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="@string/edit_comment_input"
         android:inputType="textPersonName"
-        android:text="@string/edit_comment_input"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSaveEdits"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNewInitial"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSaveEdits" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewInitial" />
 
     <EditText
         android:id="@+id/editTextNewName"
@@ -63,39 +63,24 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="@string/edit_name_input"
         android:inputType="textPersonName"
-        android:text="@string/edit_name_input"
         app:layout_constraintBottom_toTopOf="@+id/editTextCurrent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewMessage"
-        android:layout_width="304dp"
-        android:layout_height="39dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSaveEdits"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp" />
-
     <Button
         android:id="@+id/buttonSaveEdits"
-        android:layout_width="259dp"
-        android:layout_height="59dp"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/save_button"
-        app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNewComment"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="357dp" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp" />
 </android.support.constraint.ConstraintLayout>

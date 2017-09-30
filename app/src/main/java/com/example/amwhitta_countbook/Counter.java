@@ -25,9 +25,9 @@ public class Counter implements Serializable {
     }
 
     // BEHAVIOURS
-    public void increment(){ ++current; }
-    public void decrement(){ --current; }
-    public void reset(){ current = initial; }
+    public void increment(){ ++current; setDate();}
+    public void decrement(){ if (current > 0) { --current; setDate(); } }
+    public void reset(){ current = initial; setDate();}
 
     // GETTERS
     public String getName(){ return name; }
@@ -39,7 +39,7 @@ public class Counter implements Serializable {
     // SETTERS
     public void setName(String name){ this.name = name; }
     public void setInitial(int initial){ this.initial = initial; }
-    public void setCurrent(int current){ this.current = current; }
+    public void setCurrent(int current){ this.current = current; setDate();}
     public void setComment(String comment){ this.comment = comment; }
     public void setDate() {
         Date temp = new Date();

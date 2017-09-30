@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Counter> counters;
     private ArrayAdapter<Counter> adapter;
     private Counter new_counter;
+    private Counter updated_counter;
+    private Boolean delete;
+    private static int index;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,10 +51,11 @@ public class MainActivity extends AppCompatActivity {
         //If a counter was just created, save it
         //Log.d("PRINT:", new_counter.getName());
         new_counter = (Counter) getIntent().getSerializableExtra("NewCounter");
+        updated_counter = (Counter) getIntent().getSerializableExtra("UpdatedCounter");
+        delete = getIntent().getBooleanExtra("DeleteCounter", false);
 
         createNewCounter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Log.d("Debugging", "clicked new counter button");
                 Intent intent = new Intent(MainActivity.this, NewCounterActivity.class);
                 startActivity(intent);
             }
@@ -60,13 +64,12 @@ public class MainActivity extends AppCompatActivity {
         counterList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.d("Debugging", "clicked counter in list");
                 Intent intent = new Intent(MainActivity.this, CounterActivity.class);
                 intent.putExtra("Counter", counters.get(i));
+                index = i;
                 startActivity(intent);
             }
         });
-        Log.d("Debugging", "end of onCreate");
     }
 
     @Override
@@ -78,6 +81,14 @@ public class MainActivity extends AppCompatActivity {
         if (new_counter != null) {
             counters.add(new_counter);
             new_counter = null;
+        }
+        if (updated_counter != null) {
+            counters.set(index, updated_counter);
+            updated_counter = null;
+        }
+        if (delete) {
+            counters.remove(index);
+            delete = false;
         }
         adapter.notifyDataSetChanged();
         counterNumber.setText(Integer.toString(counters.size()));

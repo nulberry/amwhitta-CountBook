@@ -37,9 +37,10 @@
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="143dp"
         app:layout_constraintBottom_toTopOf="@+id/textViewCurrent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/buttonReset"
@@ -91,6 +92,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageButtonPlus"
         app:layout_constraintTop_toBottomOf="@+id/textViewName"
-        tools:layout_editor_absoluteX="157dp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

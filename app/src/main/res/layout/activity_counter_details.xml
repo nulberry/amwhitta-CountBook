@@ -6,11 +6,48 @@
     android:layout_height="match_parent"
     tools:context="com.example.amwhitta_countbook.CounterDetailsActivity">
 
-    <ListView
-        android:id="@+id/listViewDetails"
-        android:layout_width="352dp"
-        android:layout_height="479dp"
-        android:background="@android:drawable/editbox_dropdown_light_frame"
+    <TextView
+        android:id="@+id/textViewNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewDateDetail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDateDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCurrentDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameDetail" />
+
+    <TextView
+        android:id="@+id/textViewCurrentDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInitialDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateDetail" />
+
+    <TextView
+        android:id="@+id/textViewInitialDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCommentDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrentDetail" />
+
+    <TextView
+        android:id="@+id/textViewCommentDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInitialDetail" />
 </android.support.constraint.ConstraintLayout>

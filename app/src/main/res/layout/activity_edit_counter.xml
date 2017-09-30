@@ -17,13 +17,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/edit_current_input"
-        app:layout_constraintBottom_toTopOf="@+id/editTextInitial"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNewInitial"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewName" />
 
     <EditText
-        android:id="@+id/editTextInitial"
+        android:id="@+id/editTextNewInitial"
         android:layout_width="354dp"
         android:layout_height="54dp"
         android:layout_marginEnd="16dp"
@@ -33,13 +33,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/edit_initial_input"
-        app:layout_constraintBottom_toTopOf="@+id/editTextComment"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNewComment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCurrent" />
 
     <EditText
-        android:id="@+id/editTextComment"
+        android:id="@+id/editTextNewComment"
         android:layout_width="354dp"
         android:layout_height="54dp"
         android:layout_marginEnd="16dp"
@@ -51,11 +51,11 @@
         android:text="@string/edit_comment_input"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextInitial"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewInitial"
         app:layout_constraintBottom_toTopOf="@+id/buttonSaveEdits" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/editTextNewName"
         android:layout_width="354dp"
         android:layout_height="54dp"
         android:layout_marginEnd="16dp"
@@ -95,7 +95,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextComment"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewComment"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="357dp" />
 </android.support.constraint.ConstraintLayout>

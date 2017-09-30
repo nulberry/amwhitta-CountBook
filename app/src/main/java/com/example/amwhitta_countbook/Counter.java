@@ -1,5 +1,6 @@
 package com.example.amwhitta_countbook;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -7,13 +8,12 @@ import java.util.Date;
  * Created by Andrea on 15-09-17.
  */
 
-public class Counter {
+public class Counter implements Serializable {
     private String name;
     private String date;
     private int initial;
     private int current;
     private String comment;
-    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
     // CONSTRUCTOR
     public Counter(String name, int initial){
@@ -22,7 +22,6 @@ public class Counter {
         this.initial = initial;
         current = initial;
         comment = "";
-
     }
 
     // BEHAVIOURS
@@ -44,7 +43,13 @@ public class Counter {
     public void setComment(String comment){ this.comment = comment; }
     public void setDate() {
         Date temp = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         date = formatter.format(temp);
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
 }

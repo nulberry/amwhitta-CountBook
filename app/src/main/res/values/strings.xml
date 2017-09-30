@@ -12,4 +12,9 @@
     <string name="edit_comment_input">Edit comment:</string>
     <string name="save_button">save</string>
     <string name="new_button">new counter</string>
+    <string name="new_counter_name">Enter name:</string>
+    <string name="new_counter_initial">Enter initial value:</string>
+    <string name="new_counter_save_button">Create Counter</string>
+    <string name="new_counter_comment">Enter comment (optional):</string>
+    <string name="empty"></string>
 </resources>

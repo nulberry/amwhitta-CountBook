@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.example.amwhitta_countbook.NewCounterActivity">
 
+    <EditText
+        android:id="@+id/editTextNewName"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/new_counter_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNewInitial"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNewInitial"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/new_counter_initial"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNewComment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewName" />
+
+    <EditText
+        android:id="@+id/editTextNewComment"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/new_counter_comment"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewInitial" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="203dp"
+        android:layout_height="103dp"
+        android:text="@string/new_counter_save_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewComment" />
 </android.support.constraint.ConstraintLayout>

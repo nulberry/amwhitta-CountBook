@@ -19,6 +19,7 @@
         app:layout_constraintBottom_toTopOf="@+id/listViewCounters" />
 
     <ListView
+        android:id="@+id/listViewCounters"
         android:layout_width="354dp"
         android:layout_height="326dp"
         android:layout_marginLeft="16dp"
@@ -26,7 +27,6 @@
         android:background="@android:drawable/editbox_dropdown_light_frame"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/listViewCounters"
         app:layout_constraintBottom_toTopOf="@+id/textViewNumCounters"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -40,20 +40,9 @@
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumCounters"
         app:layout_constraintTop_toBottomOf="@+id/listViewCounters"
-        app:layout_constraintRight_toLeftOf="@+id/buttonNewCounter" />
-
-    <EditText
-        android:id="@+id/editTextNumCounters"
-        android:layout_width="105dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNumCounters"
-        app:layout_constraintRight_toLeftOf="@+id/buttonNewCounter" />
+        app:layout_constraintRight_toLeftOf="@+id/buttonNewCounter"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCount" />
 
     <Button
         android:id="@+id/buttonNewCounter"
@@ -61,8 +50,20 @@
         android:layout_height="98dp"
         android:text="@string/new_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/editTextNumCounters"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCounters" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewCounters"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNumCounters" />
+
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonNewCounter"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumCounters" />
 
 </android.support.constraint.ConstraintLayout>

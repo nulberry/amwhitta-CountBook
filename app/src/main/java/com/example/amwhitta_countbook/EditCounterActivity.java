@@ -20,10 +20,10 @@ public class EditCounterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_counter);
 
         // EDIT FIELDS
-        nameText = (EditText) findViewById(R.id.editTextName);
+        nameText = (EditText) findViewById(R.id.editTextNewName);
         currentText = (EditText) findViewById(R.id.editTextCurrent);
-        initialText = (EditText) findViewById(R.id.editTextInitial);
-        commentText = (EditText) findViewById(R.id.editTextComment);
+        initialText = (EditText) findViewById(R.id.editTextNewInitial);
+        commentText = (EditText) findViewById(R.id.editTextNewComment);
 
         // When save button is clicked, save what has been entered in the edit fields
         Button saveButton = (Button) findViewById(R.id.buttonSaveEdits);

@@ -47,10 +47,12 @@ public class MainActivity extends AppCompatActivity {
         counterNumber = (TextView) findViewById(R.id.textViewCount);
         Button createNewCounter = (Button) findViewById(R.id.buttonNewCounter);
 
-        //If a counter was just created, save it
-        //Log.d("PRINT:", new_counter.getName());
+        // If a counter was just created in NewCounterActivity or updated in
+        // CounterActivity, store it
         new_counter = (Counter) getIntent().getSerializableExtra("NewCounter");
         updated_counter = (Counter) getIntent().getSerializableExtra("UpdatedCounter");
+
+        // If a message was sent from CounterActivity to delete a counter
         delete = getIntent().getBooleanExtra("DeleteCounter", false);
 
         createNewCounter.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         loadFromFile();
         ArrayAdapter<Counter> adapter = new ArrayAdapter<>(this, R.layout.counter_list_item, counters);
         counterList.setAdapter(adapter);
+        // Add new counter or replace old counter clicked on in ListView with updated one
         if (new_counter != null) {
             counters.add(new_counter);
             new_counter = null;
@@ -85,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             counters.set(index, updated_counter);
             updated_counter = null;
         }
+        // Delete the counter clicked on in ListView
         if (delete) {
             counters.remove(index);
             delete = false;

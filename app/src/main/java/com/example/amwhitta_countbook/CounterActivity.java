@@ -20,6 +20,7 @@ public class CounterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
 
+        // If a counter was sent from MainActivity or EditCounterActivity, save it
         counter = (Counter) getIntent().getSerializableExtra("Counter");
         edited_counter = (Counter) getIntent().getSerializableExtra("EditedCounter");
 
@@ -87,6 +88,7 @@ public class CounterActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        // If a counter was sent from EditCounterActivity, replace old counter with edited one
         if (edited_counter != null) {
             counter = edited_counter;
         }

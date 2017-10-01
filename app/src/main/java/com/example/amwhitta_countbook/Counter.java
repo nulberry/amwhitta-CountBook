@@ -51,6 +51,7 @@ class Counter implements Serializable {
 
     @Override
     public String toString() {
+        // Displays counter details in the ListView in MainActivity
         return "Name: " + name + "\n" +
                 "Date modified: " + date + "\n" +
                 "Current count: " + Integer.toString(current);

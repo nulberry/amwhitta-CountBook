@@ -12,6 +12,7 @@ public class CounterDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter_details);
 
+        // Store the counter sent by CounterActivity
         Counter counter = (Counter) getIntent().getSerializableExtra("CounterDetails");
 
         TextView counterName = (TextView) findViewById(R.id.textViewNameDetail);

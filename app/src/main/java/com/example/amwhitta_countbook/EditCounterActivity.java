@@ -22,12 +22,12 @@ public class EditCounterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_counter);
 
-        // EDIT FIELDS
         nameText = (EditText) findViewById(R.id.editTextNewName);
         currentText = (EditText) findViewById(R.id.editTextCurrent);
         initialText = (EditText) findViewById(R.id.editTextNewInitial);
         commentText = (EditText) findViewById(R.id.editTextNewComment);
 
+        // Store the counter sent by CounterActivity
         counter = (Counter) getIntent().getSerializableExtra("CounterToEdit");
 
         // When save button is clicked, save what has been entered in the edit fields

@@ -3,12 +3,14 @@ package com.example.amwhitta_countbook;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by Andrea on 15-09-17.
+ *
  */
 
-public class Counter implements Serializable {
+class Counter implements Serializable {
     private String name;
     private String date;
     private int initial;
@@ -16,7 +18,7 @@ public class Counter implements Serializable {
     private String comment;
 
     // CONSTRUCTOR
-    public Counter(String name, int initial){
+    Counter(String name, int initial){
         this.name = name;
         setDate();
         this.initial = initial;
@@ -25,31 +27,32 @@ public class Counter implements Serializable {
     }
 
     // BEHAVIOURS
-    public void increment(){ ++current; setDate();}
-    public void decrement(){ if (current > 0) { --current; setDate(); } }
-    public void reset(){ current = initial; setDate();}
+    void increment(){ ++current; setDate();}
+    void decrement(){ if (current > 0) { --current; setDate(); } }
+    void reset(){ current = initial; setDate();}
 
     // GETTERS
-    public String getName(){ return name; }
-    public String getDate() { return date; }
-    public int getInitial() { return initial; }
-    public int getCurrent() { return current; }
-    public String getComment() { return comment; }
+    String getName(){ return name; }
+    String getDate() { return date; }
+    int getInitial() { return initial; }
+    int getCurrent() { return current; }
+    String getComment() { return comment; }
 
     // SETTERS
-    public void setName(String name){ this.name = name; }
-    public void setInitial(int initial){ this.initial = initial; }
-    public void setCurrent(int current){ this.current = current; setDate();}
-    public void setComment(String comment){ this.comment = comment; }
-    public void setDate() {
+    void setName(String name){ this.name = name; }
+    void setInitial(int initial){ this.initial = initial; }
+    void setCurrent(int current){ this.current = current; setDate();}
+    void setComment(String comment){ this.comment = comment; }
+    private void setDate() {
         Date temp = new Date();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.CANADA);
         date = formatter.format(temp);
     }
 
     @Override
     public String toString() {
-        return name;
+        return "Name: " + name + "\n" +
+                "Date modified: " + date + "\n" +
+                "Current count: " + Integer.toString(current);
     }
-
 }

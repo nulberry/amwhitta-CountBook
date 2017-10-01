@@ -42,7 +42,6 @@ public class NewCounterActivity extends AppCompatActivity {
                 //Serializable counter1 = intent.getSerializableExtra("NewCounter");
                 //Log.d("PRINT:", counter1.toString());
                 startActivity(intent);
-                Log.d("Debugging", "end of new counter");
             }
         });
     }

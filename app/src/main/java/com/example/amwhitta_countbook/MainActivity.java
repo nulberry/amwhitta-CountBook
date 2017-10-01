@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     private ListView counterList;
     private TextView counterNumber;
     private ArrayList<Counter> counters;
-    private ArrayAdapter<Counter> adapter;
     private Counter new_counter;
     private Counter updated_counter;
     private Boolean delete;
@@ -76,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         loadFromFile();
-        adapter = new ArrayAdapter<Counter>(this, R.layout.counter_list_item, counters);
+        ArrayAdapter<Counter> adapter = new ArrayAdapter<>(this, R.layout.counter_list_item, counters);
         counterList.setAdapter(adapter);
         if (new_counter != null) {
             counters.add(new_counter);
@@ -107,11 +106,6 @@ public class MainActivity extends AppCompatActivity {
             counters = new ArrayList<Counter>();
             //e.printStackTrace();
         }
-        catch (IOException e) {
-            throw new RuntimeException();
-            //e.printStackTrace();
-        }
-        return;
     }
 
     private void saveInFile() {

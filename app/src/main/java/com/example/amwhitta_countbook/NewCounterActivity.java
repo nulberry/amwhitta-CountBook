@@ -35,9 +35,7 @@ public class NewCounterActivity extends AppCompatActivity {
                 String new_comment = commentText.getText().toString();
 
                 counter = new Counter(new_name, new_initial);
-                if (new_comment != null) {
-                    counter.setComment(new_comment);
-                }
+                counter.setComment(new_comment);
 
                 Intent intent = new Intent(NewCounterActivity.this, MainActivity.class);
                 intent.putExtra("NewCounter", counter);

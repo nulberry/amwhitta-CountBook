@@ -4,7 +4,7 @@
 
 ### LonelyTwitter
 * I/O using GSON (lab 3)
-* refered to it a considerable amount for many different things
+* referred to it a considerable amount for many different things
 
 ### Android Developers
 * [List View](https://developer.android.com/guide/topics/ui/layout/listview.html)

@@ -27,6 +27,11 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * Outstanding Issues:
+ * The user must navigate back to the MainActivity to save changes.
+ * Some invalid input may not be handled correctly.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final String FILENAME = "file.sav";

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/anim/abc_slide_out_top.xml"
+    }
+]

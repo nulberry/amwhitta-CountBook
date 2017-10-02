@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amwhitta_countbook.CounterActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageButton
+        android:id="@+id/imageButtonPlus"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/plus_button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageButtonMinus" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMinus"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/minus_button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDetails"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurrent"
+        app:layout_constraintRight_toLeftOf="@+id/imageButtonPlus"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCurrent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="170dp"
+        android:layout_height="97dp"
+        android:text="@string/reset_button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonDelete"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDetails" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="170dp"
+        android:layout_height="97dp"
+        android:text="@string/edit_button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDelete"
+        app:layout_constraintLeft_toRightOf="@+id/buttonDetails"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPlus" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="170dp"
+        android:layout_height="97dp"
+        android:text="@string/delete_button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/buttonReset"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEdit" />
+
+    <Button
+        android:id="@+id/buttonDetails"
+        android:layout_width="170dp"
+        android:layout_height="97dp"
+        android:text="@string/details_button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonEdit"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMinus" />
+
+    <TextView
+        android:id="@+id/textViewCurrent"
+        android:layout_width="325dp"
+        android:layout_height="37dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPlus"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+</android.support.constraint.ConstraintLayout>

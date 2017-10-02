@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/Andrea/Desktop/CMPUT_301/assignments/assignment1/amwhitta-CountBook/app/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/Andrea/.android/build-cache/ccb5693d47c0c1691be6459a7d6f36ed4de04d72/output/res/layout-v21/notification_action.xml"
+    }
+]
